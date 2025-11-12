@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ title }}</title>
+</head>
+<body>
+  <h1>Welcome {{ username }}!</h1>
+  <p>Here are your topics</p>
+  <ul>
+    {% for topic in topics %}
+      <li>{{ topic }}</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
