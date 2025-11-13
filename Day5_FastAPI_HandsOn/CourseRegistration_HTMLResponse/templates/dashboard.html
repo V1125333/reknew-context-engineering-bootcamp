@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Welcome to the Dashboard</h1>
+    <p>This is the dashboard page.</p>
+   
+    <form action="/submit" method="post">
+
+        <!-- Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <!-- Role -->
+        <label for="role">Role:</label>
+        <select id="role" name="role" required>
+            <option value="student">Student</option>
+            <option value="instructor">Instructor</option>
+            <option value="admin">Admin</option>
+        </select>
+        <br><br>
+
+        <!-- Topic -->
+        <label for="topic">Topic:</label>
+        <input type="text" id="topic" name="topic" placeholder="e.g. Math, Science" required>
+        <br><br>
+
+        <!-- Delivery Mode -->
+        <label for="delivery_mode">Delivery Mode:</label>
+        <select id="delivery_mode" name="delivery_mode" required>
+            <option value="online">Online</option>
+            <option value="offline">Offline</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
