@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Selection Form</title>
+</head>
+<body>
+    <form method="post" action="/submit">
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="course">Select Course:</label>
+        <select id="course" name="course" required>
+            <option value="Python">Python</option>
+            <option value="Data Science">Data Science</option>
+            <option value="FastAPI">FastAPI</option>
+            <option value="SQL">SQL</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
